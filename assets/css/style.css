@@ -1,0 +1,251 @@
+:root {
+    --dark:rgb(55,55,55);
+    --light:rgb(242,242,242);
+    --reddark:rgb(77,0,0);
+    --red:rgb(255, 0, 0);
+    --redlight:rgb(255,240,240);
+    --orangedark:rgb(44,33,0);
+    --orange:rgb(255, 191, 0);
+    --orangelight:rgb(255,211,77);
+    --yellowdark:rgb(108,117,0);
+    --yellow:rgb(234, 255, 0);
+    --yellowlight:rgb(255,255,155);
+    --greendark:rgb(0,66,44);
+    --green:rgb(0, 255, 170);
+    --greenlight:rgb(222,255,244);
+    --bluedark:rgb(0,22,66);
+    --blue:rgb(0, 85, 255);
+    --bluelight:rgb(222,233,255);
+    --indigodark:rgb(44,0,99);
+    --indigo:rgb(115, 0, 255);
+    --indigolight:rgb(244,233,255);
+    --violetdark:rgb(66,0,44);
+    --violet:rgb(255, 0, 170);
+    --violetlight:rgb(255,242,251);
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.theme-grey {
+    --background-color: --light;
+    --color: --dark;
+    --text-shadow: 0 0 1px var(--dark)
+}
+
+.theme-red {
+    --background-color: --redlight;
+    --color: --reddark;
+    --text-shadow: 0 0 1px var(--reddark)
+}
+.theme-orange {
+    --background-color: --orangelight;
+    --color: --orangedark;
+    --text-shadow: 0 0 1px var(--orangedark)
+}
+.theme-yellow {
+    --background-color: --yellowlight;
+    --color: --yellowdark;
+    --text-shadow: 0 0 1px var(--yellowdark)
+}
+.theme-green {
+    --background-color: --greenlight;
+    --color: --greendark;
+    --text-shadow: 0 0 1px var(--greendark)
+}
+.theme-blue {
+    --background-color: --bluelight;
+    --color: --bluedark;
+    --text-shadow: 0 0 1px var(--bluedark)
+}
+.theme-indigo {
+    --background-color: --indigolight;
+    --color: --indigodark;
+    --text-shadow: 0 0 1px var(--indigodark)
+}
+.theme-violet {
+    --background-color: --violetlight;
+    --color: --violetdark;
+    --text-shadow: 0 0 1px var(--violetdark)
+}
+
+nav {
+    height: 100px;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.color {
+    display: flex;
+}
+
+.navbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: large;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+h2 {
+    font-weight: 700;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.red {
+    background-color: var(--red);
+    width: 10px;
+    height: 100%
+}
+
+.orange {
+    background-color: var(--orange);
+    width: 10px;
+    height: 100%
+}
+
+.yellow {
+    background-color: var(--yellow);
+    width: 10px;
+    height: 100%
+}
+
+.green {
+    background-color: var(--green);
+    width: 10px;
+    height: 100%
+}
+
+.blue {
+    background-color: var(--blue);
+    width: 10px;
+    height: 100%
+}
+
+.indigo {
+    background-color: var(--indigo);
+    width: 10px;
+    height: 100%
+}
+
+.violet {
+    background-color: var(--violet);
+    width: 10px;
+    height: 100%
+}
+
+.black {
+    background-color: var(--dark);
+    width: 10px;
+    height: 100%
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 600px;
+}
+
+main div {
+    align-items: center;
+    align-content: center;
+    padding: 50px
+}
+
+article {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    width: 100%;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: center;
+}
+
+.footerlinks div {
+    padding: 10px;
+}
+
+.footerlinks a img {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.footersignature {
+    text-align: right;
+}
+
+.footersignature div {
+    font-weight: 300;
+    font-size: x-small;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        height: 200px;
+    }
+
+    .navbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    h1 {
+        font-size: medium;
+    }
+    
+    h2 {
+        font-size: medium;
+        padding-top: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        height: 200px;
+    }
+
+    .navbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    h1 {
+        font-size: small;
+        font-weight: 500;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    h2 {
+        font-size: small;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -7,7 +7,7 @@
 .theme-red {    
     --dark:rgb(77,0,0);
     --strong:rgb(255, 0, 0);
-    --light:rgb(255, 220, 220);
+    --light:rgb(255, 242, 242);
 }
 .theme-orange {
     --dark:rgb(44,33,0);
@@ -15,9 +15,9 @@
     --light:rgb(255,211,77);
 }
 .theme-yellow {
-    --dark:rgb(108,117,0);
+    --dark:rgb(85, 93, 0);
     --strong:rgb(234, 255, 0);
-    --light:rgb(255,255,155);
+    --light:rgb(255, 255, 121);
 }
 .theme-green {
     --dark:rgb(0,66,44);
@@ -37,7 +37,7 @@
 .theme-violet {
     --dark:rgb(66,0,44);
     --strong:rgb(255, 0, 170);
-    --light:rgb(255, 212, 242);
+    --light:rgb(255, 233, 248);
 }
 
 * {
@@ -46,7 +46,7 @@
     font-size: medium;
     background-color: var(--light);
     color: var(--dark);
-    text-shadow: 0 0 2px var(--strong);
+    text-shadow: 0 0 1px var(--strong);
 }
 
 nav {

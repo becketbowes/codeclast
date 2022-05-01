@@ -2,41 +2,57 @@
     --dark:rgb(55,55,55);
     --strong:rgb(242,242,242);
     --light:white;
+    --filterdark: invert(20%) sepia(0%) saturate(0%) hue-rotate(247deg) brightness(94%) contrast(92%);
+    --filterlight: invert(100%) sepia(100%) saturate(0%) hue-rotate(302deg) brightness(103%) contrast(103%);
 }
 .theme-red {    
     --dark:rgb(77,0,0);
     --strong:rgb(255, 0, 0);
     --light:rgb(255, 242, 242);
+    --filterdark: invert(6%) sepia(50%) saturate(7489%) hue-rotate(7deg) brightness(90%) contrast(110%);
+    --filterlight: invert(94%) sepia(2%) saturate(1708%) hue-rotate(314deg) brightness(103%) contrast(101%);
 }
 .theme-orange {
     --dark:rgb(44,33,0);
     --strong:rgb(255, 191, 0);
     --light:rgb(255,211,77);
+    --filterdark: invert(13%) sepia(14%) saturate(4371%) hue-rotate(20deg) brightness(102%) contrast(103%);
+    --filterlight: invert(81%) sepia(73%) saturate(458%) hue-rotate(336deg) brightness(100%) contrast(102%);
 }
 .theme-yellow {
     --dark:rgb(85, 93, 0);
     --strong:rgb(234, 255, 0);
     --light:rgb(255, 255, 121);
+    --filterdark: invert(28%) sepia(85%) saturate(1034%) hue-rotate(39deg) brightness(92%) contrast(101%);
+    --filterlight: invert(99%) sepia(58%) saturate(1589%) hue-rotate(327deg) brightness(109%) contrast(114%);
 }
 .theme-green {
     --dark:rgb(0,66,44);
     --strong:rgb(0, 255, 170);
     --light:rgb(233, 255, 248);
+    --filterdark: invert(11%) sepia(37%) saturate(1021%) hue-rotate(149deg) brightness(92%) contrast(99%);
+    --filterlight: invert(91%) sepia(18%) saturate(228%) hue-rotate(90deg) brightness(108%) contrast(102%);
 }
 .theme-blue {
     --dark:rgb(0,22,66);
     --strong:rgb(0, 85, 255);
     --light:rgb(201, 219, 255);
+    --filterdark: invert(10%) sepia(45%) saturate(2484%) hue-rotate(200deg) brightness(97%) contrast(111%);
+    --filterlight: invert(82%) sepia(6%) saturate(2107%) hue-rotate(192deg) brightness(103%) contrast(104%);
 }
 .theme-indigo {
     --dark:rgb(44,0,99);
     --strong:rgb(115, 0, 255);
     --light:rgb(233, 211, 255);
+    --filterdark: invert(16%) sepia(63%) saturate(2305%) hue-rotate(253deg) brightness(75%) contrast(132%);
+    --filterlight: invert(70%) sepia(61%) saturate(205%) hue-rotate(214deg) brightness(109%) contrast(103%);
 }
 .theme-violet {
     --dark:rgb(66,0,44);
     --strong:rgb(255, 0, 170);
     --light:rgb(255, 233, 248);
+    --filterdark: invert(8%) sepia(39%) saturate(5535%) hue-rotate(301deg) brightness(86%) contrast(110%);
+    --filterlight: invert(81%) sepia(19%) saturate(238%) hue-rotate(287deg) brightness(112%) contrast(102%);
 }
 
 * {
@@ -46,6 +62,7 @@
     background-color: var(--light);
     color: var(--dark);
     text-shadow: 0 0 1px var(--strong);
+    text-decoration: none;
 }
 
 nav {
@@ -68,6 +85,11 @@ nav {
     justify-content: space-around;
 }
 
+.logo {
+    width: 100px;
+    background-color: inherit;
+}
+
 h1 {
     background-color: inherit;
     color: inherit;
@@ -80,9 +102,15 @@ h2 {
     background-color: inherit;
     color: inherit;
     font-weight: 700;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+h3 {
+    background-color: inherit;
+    color: inherit;
+    font-weight: 700;
 }
 
 .red {
@@ -152,6 +180,28 @@ article {
     text-align: center;
 }
 
+.about-contain {
+    width: 100%;
+    background-image: url(./assets/img/avatar.jpg);
+    position: relative;
+}
+
+.textbox {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0px 0px 2px var(--strong);
+    padding: 5px;
+    font-size: small;
+    text-align: left;
+}
+
+.avatar {
+    width: 100%
+}
+
 footer {
     background-color: var(--dark);
     color: var(--light);
@@ -172,16 +222,10 @@ footer {
 }
 
 .footerlinks a img {
-    background-color: inherit;
-    color: inherit;
-}
-
-.footerlinks a img {
-    background-color: inherit;
-    color: inherit;
     height: 20px;
     width: 20px;
     padding: 10px;
+    background-color: inherit;
 }
 
 .footersignature {
@@ -221,7 +265,12 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 80px;
+        background-color: inherit;
+    }
+    
     nav {
         height: 200px;
     }
@@ -242,7 +291,15 @@ footer {
     h2 {
         font-size: small;
         font-weight: 500;
+        padding-top: 3px;
+        padding-bottom: 3px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .about-contain {
+        width: 100%;
+        background-image: url(./assets/img/avatarsmall.jpg);
+        display: flex;
     }
 }

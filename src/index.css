@@ -60,7 +60,7 @@
 * {
     font-family: 'Source Code Pro', monospace;
     font-weight: 500;
-    font-size: medium;
+    font-size: small;
     background-color: var(--light);
     color: var(--dark);
     text-shadow: 0 0 1px var(--strong);
@@ -86,15 +86,25 @@ h2 {
 
 h3 {
     background-color: inherit;
+    font-size: small;
     color: inherit;
     font-weight: 700;
 }
 
+h4 {
+    color: inherit;
+    font-weight: 300;
+}
+
 button {
-    color: var( --strong);
+    font-weight: 700;
     background-color: transparent;
     border: none;
     text-decoration: none;
+}
+
+img {
+    background-color: transparent;
 }
 
 /* header rules */
@@ -261,6 +271,19 @@ article {
     font-size: small;
     text-align: left;
 }
+
+/* resume styling */
+.resumefield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.resumebody {
+    text-align: left;
+}
+
 
 /* contact form styling */
 .form {

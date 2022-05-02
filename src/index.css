@@ -262,6 +262,41 @@ article {
     text-align: left;
 }
 
+/* contact form styling */
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+}
+
+textarea {
+    margin: 30px;
+    width: 60%;
+    height: 250px;
+    border: none;
+    resize: none;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 2px var(--strong);
+}
+
+input {
+    margin: 20px;
+    width: 60%;
+    border: none;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 2px var(--strong);
+}
+
+.contactsubmit {
+    margin: 20px;
+    width: 60%;
+    color: var(--dark);
+}
+
 /* footer styling  */
 footer {
     background-color: var(--dark);

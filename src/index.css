@@ -1,3 +1,4 @@
+/* thematic color variables */
 .theme-grey {
     --dark:rgb(55,55,55);
     --strong:rgb(242,242,242);
@@ -55,6 +56,7 @@
     --filterlight: invert(81%) sepia(19%) saturate(238%) hue-rotate(287deg) brightness(112%) contrast(102%);
 }
 
+/* general rules, setting theme */
 * {
     font-family: 'Source Code Pro', monospace;
     font-weight: 500;
@@ -63,31 +65,6 @@
     color: var(--dark);
     text-shadow: 0 0 1px var(--strong);
     text-decoration: none;
-}
-
-nav {
-    height: 100px;
-    background-color: var(--dark);
-    color: var(--light);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.color {
-    display: flex;
-}
-
-.navbox {
-    background-color: inherit;
-    color: inherit;
-    display: flex;
-    justify-content: space-around;
-}
-
-.logo {
-    width: 150px;
-    background-color: inherit;
 }
 
 h1 {
@@ -111,6 +88,39 @@ h3 {
     background-color: inherit;
     color: inherit;
     font-weight: 700;
+}
+
+button {
+    color: var( --strong);
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+/* header rules */
+nav {
+    height: 100px;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.color {
+    display: flex;
+}
+
+.navbox {
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 150px;
+    background-color: inherit;
 }
 
 .red {
@@ -161,19 +171,7 @@ h3 {
     height: 100%
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 600px;
-}
-
-main div {
-    align-items: center;
-    align-content: center;
-    padding: 50px
-}
-
+/* default floating textbox structure */
 article {
     align-items: center;
     align-content: center;
@@ -197,20 +195,79 @@ article {
     text-align: left;
 }
 
+/* about section styling */
 .avatar {
     width: 100%
 }
 
-.project-icon {
-    width: 500px;
+/* project section styling */
+.project-contain {
+    height: 300px;
+    position: relative;
+    padding-top: 30px;
 }
 
+.project-icon {
+    position: absolute;
+    width: 380px;
+}
+
+#ideafora {
+    width: 500px;
+    right: 500px;
+    top: 0px;
+    opacity: .35;
+}
+#binaryliteral {
+    width: 600px;
+    right: 300px;
+    top: -200px;
+    opacity: .3;
+}
+#weathervain {
+    width: 300px;
+    right: 900px;
+    top: -550px;
+    opacity: .35;
+}
+#elevenhourclock {
+    width: 800px;
+    right: 600px;
+    top: -800px;
+    opacity: .4;
+}
+#password-generator {
+    width: 300px;
+    right: 300px;
+    top: -800px;
+    opacity: .45;
+}
+#quizzlestick {
+    width: 400px;
+    right: 600px;
+    top: -1200px;
+    opacity: .2;
+}
+
+.projecttextbox {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 380px;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0px 0px 2px var(--strong);
+    padding: 5px;
+    font-size: small;
+    text-align: left;
+}
+
+/* footer styling  */
 footer {
     background-color: var(--dark);
     color: var(--light);
     width: 100%;
 }
-
 .footerlinks {
     background-color: inherit;
     color: inherit;
@@ -245,6 +302,7 @@ footer {
     padding: 5px;
 }
 
+/* media queries */
 @media screen and (max-width: 1000px) {
     nav {
         height: 200px;
@@ -276,6 +334,62 @@ footer {
     h3 {
         font-size: small;
         font-weight: 700;
+    }
+
+    /* project section */
+    .project-icon {
+        position:static;
+        width: 380px;
+    }
+
+    .project-icon {
+        width: 220px;
+    }
+    
+    .project-contain {
+        width: 100%;
+        height: 280px;
+        position: relative;
+        padding-top: 30px;
+        padding-left: 5%;
+    }
+    
+    .projecttextbox {
+        visibility: visible;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        width: 30%;
+        background-color: rgba(255, 255, 255, .5);
+        box-shadow: 0px 0px 2px var(--strong);
+        padding: 5px;
+        font-size: small;
+        text-align: left;
+    }
+
+    #ideafora {
+        width: 300px;
+        opacity: .5;
+    }
+    #binaryliteral {
+        width: 300px;
+        opacity: .5;
+    }
+    #weathervain {
+        width: 300px;
+        opacity: .5;
+    }
+    #elevenhourclock {
+        width: 300px;
+        opacity: .5;
+    }
+    #password-generator {
+        width: 300px;
+        opacity: .5;
+    }
+    #quizzlestick {
+        width: 300px;
+        opacity: .5;
     }
 }
 
@@ -324,5 +438,18 @@ footer {
         width: 100%;
         background-image: url(./assets/img/avatarsmall.jpg);
         display: flex;
+    }
+
+    /* project section */
+    .project-contain {
+        width: 100%;
+        height: 330px;
+        padding-left: 10%;
+    }
+    
+    .projecttextbox {
+        left: 130px;
+        top: 5px;
+        width: 50%;
     }
 }

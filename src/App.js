@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -7,14 +7,30 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 function App() {
+  const [currentContent, setCurrentContent] = useState('portfolio');
+
+  const renderContent = () => {
+    if (currentContent === 'about') {
+      return <About />;
+    }
+    if (currentContent === 'portfolio') {
+      return <Portfolio />;
+    }
+    if (currentContent === 'resume') {
+      return <Resume />;
+    }
+    if (currentContent === 'contact') {
+      return <Contact />;
+    }
+  }
+
+  const handleContentChange = (content) => setCurrentContent(content);
+
   return (
     <div>
-      <Nav></Nav>
-      <About></About>
-      <Portfolio></Portfolio>
-      <Resume></Resume>
-      <Contact></Contact>
-      <Footer></Footer>
+      <Nav currentContent={currentContent} handleContentChange={handleContentChange} />
+      {renderContent()}
+      <Footer />
     </div>
   );
 }

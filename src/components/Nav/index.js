@@ -1,28 +1,23 @@
 import React from 'react';
+import Theme from './theme';
 import codeclastLogo from '../../assets/img/codeclastfulllogo.png';
 
-function Nav() {
+function Nav({ currentContent, handleContentChange }) {
+    
+
+
     return (
         <header>
             <nav>
                 <h1>
                     <img src={codeclastLogo} className="logo" alt="CODECLAST"></img>
                 </h1>
-                <div className="color">
-                    <div className="red"></div>
-                    <div className="orange"></div>
-                    <div className="yellow"></div>
-                    <div className="green"></div>
-                    <div className="blue"></div>
-                    <div className="indigo"></div>
-                    <div className="violet"></div>
-                    <div className="black"></div>
-                </div>
+                <Theme />
                 <div className="navbox">
-                    <h2 className="about">/about</h2>
-                    <h2 className="portfolio">/portfolio</h2>
-                    <h2 className="resume">/resume</h2>
-                    <h2 className="contact">/contact</h2>
+                    <h2 href="#about" onClick={() => handleContentChange('about')} className={currentContent === 'about' ? 'about active' : 'current'}>/about</h2>
+                    <h2 href="#portfolio" onClick={() => handleContentChange('portfolio')} className={currentContent === 'portfolio' ? 'portfolio active' : 'current'}>/portfolio</h2>
+                    <h2 href="#resume" onClick={() => handleContentChange('resume')} className={currentContent === 'resume' ? 'resume active' : 'current'}>/resume</h2>
+                    <h2 href="#contact" onClick={() => handleContentChange('contact')} className={currentContent === 'contact' ? 'contact active' : 'current'}>/contact</h2>
                 </div>
             </nav>
         </header>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -7,14 +7,22 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 function App() {
+  //send page render conditional to nav function
   const [currentContent, setCurrentContent] = useState('portfolio');
+  //media query
+  const [isBig, setIsBig] = useState(window.matchMedia("(min-width: 1000px)").matches)
+  useEffect(() => {
+    window.matchMedia("(min-width:1000px)")
+    .addEventListener('change', e => setIsBig( e.matches ));
+  }, []);
+
 
   const renderContent = () => {
     if (currentContent === 'about') {
-      return <About />;
+      return <About isBig={isBig} />;
     }
     if (currentContent === 'portfolio') {
-      return <Portfolio />;
+      return <Portfolio isBig={isBig} />;
     }
     if (currentContent === 'resume') {
       return <Resume />;

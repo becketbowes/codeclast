@@ -1,43 +1,22 @@
 import React from 'react';
 
 function Theme() {
-    const setTheme = (currentTheme) => {
-        if (currentTheme === 'grey') {
-            document.documentElement.className = 'theme-grey';
-        }
-        if (currentTheme === 'red') {
-            document.documentElement.className = 'theme-red';
-        }
-        if (currentTheme === 'orange') {
-            document.documentElement.className = 'theme-orange';
-        }
-        if (currentTheme === 'yellow') {
-            document.documentElement.className = 'theme-yellow';
-        }
-        if (currentTheme === 'green') {
-            document.documentElement.className = 'theme-green';
-        }
-        if (currentTheme === 'blue') {
-            document.documentElement.className = 'theme-blue';
-        }
-        if (currentTheme === 'indigo') {
-            document.documentElement.className = 'theme-indigo';
-        }
-        if (currentTheme === 'violet') {
-            document.documentElement.className = 'theme-violet';
-        }
+    //changes the css class of the root html document to change ensuing css variables
+    const onClick = (e) => {
+        document.documentElement.className = `theme-${e.target.className}`;
     }
 
+    //rainbow div display in nav
     return (
-        <div className="color">
-            <div onClick={() => setTheme('red')} className="red"></div>
-            <div onClick={() => setTheme('orange')} className="orange"></div>
-            <div onClick={() => setTheme('yellow')} className="yellow"></div>
-            <div onClick={() => setTheme('green')} className="green"></div>
-            <div onClick={() => setTheme('blue')} className="blue"></div>
-            <div onClick={() => setTheme('indigo')} className="indigo"></div>
-            <div onClick={() => setTheme('violet')} className="violet"></div>
-            <div onClick={() => setTheme('grey')} className="black"></div>
+        <div className="color" onClick={(e) => onClick(e)}>
+            <div className="red"></div>
+            <div className="orange"></div>
+            <div className="yellow"></div>
+            <div className="green"></div>
+            <div className="blue"></div>
+            <div className="indigo"></div>
+            <div className="violet"></div>
+            <div className="grey"></div>
         </div>
     )
 }

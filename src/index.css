@@ -137,6 +137,10 @@ nav {
     background-color: inherit;
 }
 
+#active {
+    background-color: var(--strong);
+}
+
 .red {
     background-color: rgb(255, 0, 0);
     width: 10px;
@@ -179,7 +183,7 @@ nav {
     height: 100%
 }
 
-.black {
+.grey {
     background-color: rgb(55,55,55);
     width: 10px;
     height: 100%

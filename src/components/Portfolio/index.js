@@ -53,7 +53,9 @@ const projects = [
     }
 ]
 
-function Portfolio() {
+function Portfolio(isBig) {
+    console.log(isBig);
+
     return (
         <main className='aligncontain'>
             <div>

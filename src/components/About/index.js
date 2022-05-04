@@ -1,7 +1,12 @@
 import React from 'react';
-import Avatar from '../../assets/img/avatarsmall.jpg'
+// import AvatarSmall from '../../assets/img/avatarsmall.jpg'
+import Avatar from '../../assets/img/avatar.jpg';
 
-function About() {
+function About(isBig) {
+    //media query for image size to return
+    // let image = AvatarSmall;
+    // if (isBig) { return image = Avatar; }
+
     return (
         <article className='article-contain'>
             <img src={Avatar} className="avatar" alt="Hank Mamallian Snoopicus the Beagle, the codeclast mascot" />

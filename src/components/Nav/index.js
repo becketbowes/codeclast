@@ -3,9 +3,13 @@ import Theme from './theme';
 import codeclastLogo from '../../assets/img/codeclastfulllogo.png';
 
 function Nav({ currentContent, handleContentChange }) {
-    
+    //sends change page content request to useState in App.js, colors active button 
+    const onClick = (e) => {
+        handleContentChange(e.target.className);
+        Set.e.target.id("active");
+    }
 
-
+    //logo, theme and nav bar
     return (
         <header>
             <nav>
@@ -13,11 +17,11 @@ function Nav({ currentContent, handleContentChange }) {
                     <img src={codeclastLogo} className="logo" alt="CODECLAST"></img>
                 </h1>
                 <Theme />
-                <div className="navbox">
-                    <h2 href="#about" onClick={() => handleContentChange('about')} className={currentContent === 'about' ? 'about active' : 'current'}>/about</h2>
-                    <h2 href="#portfolio" onClick={() => handleContentChange('portfolio')} className={currentContent === 'portfolio' ? 'portfolio active' : 'current'}>/portfolio</h2>
-                    <h2 href="#resume" onClick={() => handleContentChange('resume')} className={currentContent === 'resume' ? 'resume active' : 'current'}>/resume</h2>
-                    <h2 href="#contact" onClick={() => handleContentChange('contact')} className={currentContent === 'contact' ? 'contact active' : 'current'}>/contact</h2>
+                <div className="navbox" onClick={(e) => onClick(e)}>
+                    <h2 href="#about" className='about' id={currentContent === 'active' ? 'x' : 'about'}>/about</h2>
+                    <h2 href="#portfolio" className='portfolio' id={currentContent === 'active' ? 'x' : 'portfolio'}>/portfolio</h2>
+                    <h2 href="#resume" className='resume' id={currentContent === 'active' ? 'x' : 'resume'}>/resume</h2>
+                    <h2 href="#contact" className='contact' id={currentContent === 'active' ? 'x' : 'contact'}>/contact</h2>
                 </div>
             </nav>
         </header>

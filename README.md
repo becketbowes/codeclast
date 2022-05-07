@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# codeclast 2.0
+  ![Creative Commons Attribution License, Sat May 07 2022 19:26:46 GMT-0400 (Eastern Daylight Time)](./assets/img/readme/cc-by.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ![codeclast screenshot](./assets/img/readme/codeclastReadme.jpg)
 
-## Available Scripts
+  ## OVERVIEW:
+   A professional website that hosts a porfolio, cv, contact and about page and that showcases my abilities as a programmer. . This will be a site where friends and strangers can see and get to know my work. Employers and family will both be able to see my range of skills.. The most subtle elements that really won't be noticed were some of the most fun to implement.
 
-In the project directory, you can run:
+  ## Table Of Contents:
+  [Installation](README.md#installation)<br>
+  [Usage](README.md#usage)<br>
+  [Tests](README.md#tests)<br>
+  [Credits](README.md#credits)<br>
+  [Questions](README.md#questions)<br>
+  [License](README.md#license)<br>
 
-### `npm start`
+  ## Installation
+  Created with React, to be installed on a heroku site where the public will be able to interact with it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ## Usage
+  The site should be intuitive. A reminder when adding more projects, that in addition to adding them to the project array, they will need to be arranged in the css page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ## Tests
+  verson 2.1 is expected to have tests.
 
-### `npm test`
+  ## Credits
+  It takes a village to make a website, but particular shout out to Mustaq Ahamad who had a brilliant article on how to switch themes, that i leverages very heavily here. The article is here: https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2   ...Also to Barrett Sontag who made this brilliant tool to leverage css filters: https://codepen.io/sosuke/pen/Pjoqqp and the favicon converter people here https://favicon.io/favicon-converter/ and all the node dependency developers and everyone whos in my package.json - you are in my heart as well.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ## Questions
+  [Becket, Codeclast](becketbowes@gmail.com)
+  [Github Page](http://www.github.com/becketbowes)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ## License
+  [Creative Commons Attribution License, Sat May 07 2022 19:26:46 GMT-0400 (Eastern Daylight Time)](https://creativecommons.org/licenses/by/4.0/legalcode)

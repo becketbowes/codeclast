@@ -117,8 +117,12 @@ nav {
     justify-content: space-around;
 }
 
+.link {
+    color: var(--light);
+}
+
 .current {
-    color: var(--strong);
+    color: white;
 }
 
 .color {
@@ -135,10 +139,6 @@ nav {
 .logo {
     width: 150px;
     background-color: inherit;
-}
-
-#active {
-    background-color: var(--strong);
 }
 
 .red {
@@ -215,60 +215,35 @@ article {
 
 /* about section styling */
 .avatar {
-    width: 100%
+    margin-top: 5px;
+    width: 50%;
+    padding: 30px;
 }
 
 /* project section styling */
+.project-area {
+    height: 720px;
+}
+
 .project-contain {
-    height: 300px;
+    height: 10px;
     position: relative;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .project-icon {
     position: absolute;
     width: 380px;
+    opacity: .22;
+    z-index: 0;
 }
 
-#ideafora {
-    width: 500px;
-    right: 500px;
-    top: 0px;
-    opacity: .35;
-}
-#binaryliteral {
-    width: 600px;
-    right: 300px;
-    top: -200px;
-    opacity: .3;
-}
-#weathervain {
-    width: 300px;
-    right: 900px;
-    top: -550px;
-    opacity: .35;
-}
-#elevenhourclock {
-    width: 800px;
-    right: 600px;
-    top: -800px;
-    opacity: .4;
-}
-#password-generator {
-    width: 300px;
-    right: 300px;
-    top: -800px;
-    opacity: .45;
-}
-#quizzlestick {
-    width: 400px;
-    right: 600px;
-    top: -1200px;
-    opacity: .2;
+.project-icon:hover {
+    opacity: .8;
+    z-index: 11;
 }
 
 .projecttextbox {
-    visibility: hidden;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -278,6 +253,43 @@ article {
     padding: 5px;
     font-size: small;
     text-align: left;
+    visibility: hidden;
+}
+
+.project-contain:hover .projecttextbox{
+    visibility: visible;
+    z-index: 11;
+}
+
+#ideafora {
+    width: 500px;
+    right: 600px;
+    top: 90px;
+}
+#binaryliteral {
+    width: 600px;
+    right: 220px;
+    top: 121px;
+}
+#weathervain {
+    width: 300px;
+    right: 900px;
+    top: 88px;
+}
+#elevenhourclock {
+    width: 600px;
+    right: 750px;
+    top: 155px;
+}
+#password-generator {
+    width: 500px;
+    right: 121px;
+    top: 330px;
+}
+#quizzlestick {
+    width: 400px;
+    right: 500px;
+    top: 330px;
 }
 
 /* resume styling */
@@ -291,7 +303,6 @@ article {
 .resumebody {
     text-align: left;
 }
-
 
 /* contact form styling */
 .form {
@@ -333,6 +344,8 @@ footer {
     background-color: var(--dark);
     color: var(--light);
     width: 100%;
+    padding: none;
+    margin: none;
 }
 .footerlinks {
     background-color: inherit;
@@ -400,6 +413,12 @@ footer {
     h3 {
         font-size: small;
         font-weight: 700;
+    }
+
+    /* about section */
+    .avatar {
+        width: 100%;
+        padding: 0
     }
 
     /* project section */
@@ -515,7 +534,7 @@ footer {
     
     .projecttextbox {
         left: 130px;
-        top: 5px;
+        top: 75px;
         width: 50%;
     }
 }

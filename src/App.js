@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <Nav currentContent={currentContent} handleContentChange={handleContentChange} />
+      <Header currentContent={currentContent} handleContentChange={handleContentChange} />
       {renderContent()}
       <Footer />
     </div>

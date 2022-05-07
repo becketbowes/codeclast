@@ -2,7 +2,6 @@ import React from 'react';
 import projects from '../../utils/projectfiles';
 
 function Portfolio(isBig) {
-    console.log(isBig);
     return (
         <main className='aligncontain'>
             <div className='project-area'>
@@ -15,9 +14,7 @@ function Portfolio(isBig) {
                     <article id={`${project.name}text`} className='projecttextbox'>
                         <h3>/{project.name}</h3>
                         {project.text}<br></br><br></br>
-                        {!isBig && (
-                            <button a href={project.link}>{project.button}</button>
-                        )}
+                        {!isBig && (<button a href={project.link}>{project.button}</button>)}
                     </article>
                     </a>
                 </div>

@@ -13,7 +13,7 @@ function Header({ currentContent, handleContentChange }) {
         <header>
             <nav>
                 <h1>
-                    <img src={codeclastLogo} className="logo" alt="CODECLAST"></img>
+                    <img src={codeclastLogo} className="logo" alt="CODECLAST" onClick={(e) => {onClick(e)}} id='portfolio'></img>
                 </h1>
                 <Theme />
                 <div className="navbox" onClick={(e) => onClick(e)}>

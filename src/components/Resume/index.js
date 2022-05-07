@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Resume() {
-    const pdf = "pdf -->"
+    const pdfBtn = "pdf -->";
 
     return (
         <article className='resumefield'>
@@ -22,31 +22,44 @@ function Resume() {
                     Studio Manager: Rudolf Stingel Studio, 2006-present<br></br>
                 </div>
                 <div>
-                    <h3>Skills:</h3>
+                    <h3>General Skills:</h3>
                     <p>
-                        Management skills<br></br>
-                        Project oversight<br></br>
-                        JavaScript<br></br>
-                        HTML/CSS<br></br>
-                        Photoshop<br></br>
-                        Illustrator<br></br>
-                        Rhino<br></br>
-                        MERN stack (MongoDB, Express, React, Node)<br></br>
-                        Object Oriented Programming<br></br>
-                        Model/View/Controller<br></br>
-                        SQL<br></br>
-                        NoSQL<br></br>
+                        Management theory and experience<br></br>
+                        Project oversight and job completion expertise<br></br>
+                    </p>
+                    <h3>Programming Structures:</h3>
+                    <p>
+                        Object Oriented Programing<br></br>
+                        Function Oriented Programming<br></br>
+                        Object Relational Mapping<br></br>
+                        Model-View-Controller<br></br>
                         Progressive Web App creation<br></br>
+                    </p>
+                    <h3>Stack: MERN (MongoDB, Express.js, React, Node.js)</h3>
+                    <h3>Front End:</h3>
+                    <p>
+                        React / JavaScript<br></br>
+                        HTML/CSS<br></br>
+                        Graphics programs (Photoshop, Illustrator, Rhino, AutoCAD)<br></br>
+                    </p>
+                    <h3>Server Side:</h3>
+                    <p>
+                        Express, Node.js<br></br>
+                        SQL (Sequelize, NodeJS)<br></br>
+                        NoSQL (Mongo, Atlas, Mongoose, Apollo, GraphQL)<br></br>
                     </p>
                     <h3>Currently Learning:</h3>
                     <p>
+                        Blockchain Integration and Contracts<br></br>
                         Swift/Apple Dev tools<br></br>
                         AWS platform integration<br></br>
                     </p>
                     <br></br>
                 </div>
             </div>
-            <button>{pdf}</button>
+            <a href="../../src/assets/pdf/BecketChamblissResume.pdf.zip" download>
+            <button>{pdfBtn}</button>
+            </a>
         </article>
     )
 };

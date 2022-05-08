@@ -1,4 +1,5 @@
 import React from 'react';
+import pdf from '../../assets/pdf/BecketChamblissResume.pdf';
 
 function Resume() {
     const pdfBtn = "pdf -->";
@@ -57,7 +58,7 @@ function Resume() {
                     <br></br>
                 </div>
             </div>
-            <a href="../../src/assets/pdf/BecketChamblissResume.pdf.zip" download>
+            <a href={pdf} download>
             <button>{pdfBtn}</button>
             </a>
         </article>

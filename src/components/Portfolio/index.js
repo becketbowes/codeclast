@@ -14,7 +14,7 @@ function Portfolio(isBig) {
                     <article id={`${project.name}text`} className='projecttextbox'>
                         <h3>/{project.name}</h3>
                         {project.text}<br></br><br></br>
-                        {!isBig && (<button a href={project.link}>{project.button}</button>)}
+                        {!isBig.isBig && (<button a href={project.link}>{project.button}</button>)}
                     </article>
                     </a>
                 </div>

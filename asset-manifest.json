@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8145c0d4.css",
-    "main.js": "/static/js/main.5fdb5e8f.js",
-    "static/js/787.612ce7d2.chunk.js": "/static/js/787.612ce7d2.chunk.js",
-    "static/media/passwordIcon.png": "/static/media/passwordIcon.c15cc6b642961df41abd.png",
-    "static/media/binaryliteralIcon.png": "/static/media/binaryliteralIcon.7e94c4c9b045a1a77084.png",
-    "static/media/avatar.jpg": "/static/media/avatar.608bc0d6123d12d4f901.jpg",
-    "static/media/avatarsmall.jpg": "/static/media/avatarsmall.db8109a66024135ef4e3.jpg",
-    "static/media/elevenhourclockIcon.png": "/static/media/elevenhourclockIcon.45643e8594d59c196261.png",
-    "static/media/weathervainIcon.png": "/static/media/weathervainIcon.11b59db750805688e07b.png",
-    "static/media/quizzlestickIcon.png": "/static/media/quizzlestickIcon.378fe4bf54b4b22ff41c.png",
-    "static/media/ideaforaIcon.png": "/static/media/ideaforaIcon.13c5044577332ee8ab32.png",
-    "static/media/codeclastfulllogo.png": "/static/media/codeclastfulllogo.cb1991194800b3e4ff42.png",
-    "index.html": "/index.html",
-    "main.8145c0d4.css.map": "/static/css/main.8145c0d4.css.map",
-    "main.5fdb5e8f.js.map": "/static/js/main.5fdb5e8f.js.map",
-    "787.612ce7d2.chunk.js.map": "/static/js/787.612ce7d2.chunk.js.map"
+    "main.css": "/codeclast/static/css/main.34032441.css",
+    "main.js": "/codeclast/static/js/main.9d281b12.js",
+    "static/js/787.612ce7d2.chunk.js": "/codeclast/static/js/787.612ce7d2.chunk.js",
+    "static/media/passwordIcon.png": "/codeclast/static/media/passwordIcon.c15cc6b642961df41abd.png",
+    "static/media/binaryliteralIcon.png": "/codeclast/static/media/binaryliteralIcon.7e94c4c9b045a1a77084.png",
+    "static/media/avatar.jpg": "/codeclast/static/media/avatar.608bc0d6123d12d4f901.jpg",
+    "static/media/avatarsmall.jpg": "/codeclast/static/media/avatarsmall.db8109a66024135ef4e3.jpg",
+    "static/media/elevenhourclockIcon.png": "/codeclast/static/media/elevenhourclockIcon.45643e8594d59c196261.png",
+    "static/media/weathervainIcon.png": "/codeclast/static/media/weathervainIcon.11b59db750805688e07b.png",
+    "static/media/quizzlestickIcon.png": "/codeclast/static/media/quizzlestickIcon.378fe4bf54b4b22ff41c.png",
+    "static/media/ideaforaIcon.png": "/codeclast/static/media/ideaforaIcon.13c5044577332ee8ab32.png",
+    "static/media/codeclastfulllogo.png": "/codeclast/static/media/codeclastfulllogo.cb1991194800b3e4ff42.png",
+    "index.html": "/codeclast/index.html",
+    "main.34032441.css.map": "/codeclast/static/css/main.34032441.css.map",
+    "main.9d281b12.js.map": "/codeclast/static/js/main.9d281b12.js.map",
+    "787.612ce7d2.chunk.js.map": "/codeclast/static/js/787.612ce7d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8145c0d4.css",
-    "static/js/main.5fdb5e8f.js"
+    "static/css/main.34032441.css",
+    "static/js/main.9d281b12.js"
   ]
 }

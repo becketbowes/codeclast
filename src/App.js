@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function App() {
   //send page render conditional to nav function
-  const [currentContent, setCurrentContent] = useState('portfolio');
+  const [currentContent, setCurrentContent] = useState('about');
   //media query
   const [isBig, setIsBig] = useState(window.matchMedia("(min-width: 1000px)").matches)
   useEffect(() => {

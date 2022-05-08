@@ -39,7 +39,7 @@ function Resume() {
                     <h3>Front End:</h3>
                     <p>
                         React / JavaScript<br></br>
-                        HTML/CSS<br></br>
+                        HTML / CSS / Webpack and service workers<br></br>
                         Graphics programs (Photoshop, Illustrator, Rhino, AutoCAD)<br></br>
                     </p>
                     <h3>Server Side:</h3>

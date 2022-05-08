@@ -33,7 +33,7 @@ const projects = [
         name: 'elevenhourclock',
         text: "A progressive web app that is an analogue clock that divides the day into 11 hours, with 121 minutes per hour, 121 seconds per minute.",
         image: elevenhourclockIcon,
-        link: "./assets/t11secondsweep/try.html",
+        link: "https://becketbowes.github.io/elevenHourClock/",
         button: "-->"
     },
     {

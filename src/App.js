@@ -16,7 +16,6 @@ function App() {
     .addEventListener('change', e => setIsBig( e.matches ));
   }, []);
 
-
   const renderContent = () => {
     if (currentContent === 'about') {
       return <About isBig={isBig} />;

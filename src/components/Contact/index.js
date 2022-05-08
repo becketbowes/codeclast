@@ -29,8 +29,18 @@ function Contact() {
         e.preventDefault();
 
         //validate
-        if (!validateEmail(email) || !userName) {
-            setErrMessage('email or username is invalid');
+        if (!validateEmail(email)) {
+            setErrMessage('This email is no email at all!');
+            return;
+        }
+
+        if (!userName) {
+            setErrMessage('Who even are you? A name, some name, please.');
+            return;
+        }
+
+        if (!text) {
+            setErrMessage('Hemmingway was not so terse - please include a message.');
             return;
         }
         
@@ -49,13 +59,13 @@ function Contact() {
                 <textarea value={text} name="text" onChange={inputHandle} type="text" placeholder="message area" />
                 <input value={email} name="email" onChange={inputHandle} type="email" placeholder="email" />
                 <input value={userName} name="userName" onChange={inputHandle} type="userName" placeholder="username" />
-                <button type="button" className="contactsubmit" onClick={submitHandle}>{submit}</button>
-            </form>
-            {errMessage && (
+                <button type="button" className="contactsubmit" onClick={submitHandle}>{submit}</button><br></br>
+                {errMessage && (
                 <div>
                     <p className="error-text">{errMessage}</p>
                 </div>
             )}
+            </form>
         </div>
     )
 };

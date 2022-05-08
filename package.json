@@ -1,7 +1,7 @@
 {
   "name": "codeclast",
-  "version": "0.1.0",
-  "homepage": "http://becketbowes.github.io/codeclast",
+  "version": "2.1.0",
+  "homepage": "http://becketbowes.github.io/codeclast/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

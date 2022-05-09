@@ -2,7 +2,7 @@
   ![Creative Commons Attribution License, Sat May 07 2022 19:26:46 GMT-0400 (Eastern Daylight Time)](./assets/img/readme/cc-by.png)
 
   ![codeclast screenshot](./assets/img/readme/codeclastReadme.jpg)
-
+  [Github Pages Website -->](https://becketbowes.github.io/codeclast/)
   ## OVERVIEW:
    A professional website that hosts a porfolio, cv, contact and about page and that showcases my abilities as a programmer. This will be a site where friends and strangers can see and get to know my work. Employers and family will both be able to see my range of skills. The most subtle elements that really won't be noticed were some of the most fun to implement.
 

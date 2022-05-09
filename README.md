@@ -15,7 +15,7 @@
   [License](README.md#license)<br>
 
   ## Installation
-  Created with React, to be installed on a heroku site where the public will be able to interact with it.
+  Created with React, to be installed on a github pages where the public will be able to interact with it.
 
   ## Usage
   The site should be intuitive. A reminder when adding more projects, that in addition to adding them to the project array, they will need to be arranged in the css page.

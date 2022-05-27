@@ -3,7 +3,8 @@ import binaryliteralIcon from '../assets/img/binaryliteralIcon.png';
 import quizzlestickIcon from '../assets/img/quizzlestickIcon.png';
 import weathervainIcon from '../assets/img/weathervainIcon.png';
 import elevenhourclockIcon from '../assets/img/elevenhourclockIcon.png';
-import passwordIcon from '../assets/img/passwordIcon.png'
+import passwordIcon from '../assets/img/passwordIcon.png';
+import botaIcon from '../assets/img/botaProject.png';
 
 //remember to update index.css if there are any updates to the projects below
 //these projects will be mapped over into the portfolio
@@ -49,6 +50,13 @@ const projects = [
         image: quizzlestickIcon,
         link: "https://becketbowes.github.io/quizzlestick/",
         button: "-->"
+    },
+    {
+        name: 'bota',
+        text: 'Lifestyle product page for a responsible body butter brand',
+        image: botaIcon,
+        link: "https://dry-badlands-33284.herokuapp.com/",
+        button: '-->'
     }
 ]
 

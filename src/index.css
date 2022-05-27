@@ -292,6 +292,11 @@ article {
     right: 500px;
     top: 330px;
 }
+#bota {
+    width: 300px;
+    right: 1010px;
+    top: 20px; 
+}
 
 /* resume styling */
 .resumefield {
@@ -475,6 +480,10 @@ footer {
     }
     #quizzlestick {
         width: 300px;
+        opacity: .5;
+    }
+    #bota {
+        width: 250px;
         opacity: .5;
     }
 }

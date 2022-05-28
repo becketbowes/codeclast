@@ -55,7 +55,7 @@ const projects = [
         name: 'bota',
         text: 'Lifestyle product page for a responsible body butter brand',
         image: botaIcon,
-        link: "https://dry-badlands-33284.herokuapp.com/",
+        link: "https://botabotabota.herokuapp.com/",
         button: '-->'
     }
 ]

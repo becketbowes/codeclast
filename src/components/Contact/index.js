@@ -70,8 +70,14 @@ function Contact() {
     // )
     return (
         <div>
-            My email is becket dot bowes at gmail dot com
-            My phone is nine one seven, nine three zero, four six oh two
+            <form className="form">
+                <div> 
+                My email is becket dot bowes at gmail dot com.
+                </div>
+                <div>
+                My phone is nine one seven, nine three zero, four six oh two
+                </div>
+            </form>
         </div>
     )
 };

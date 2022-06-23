@@ -1,7 +1,6 @@
 import ideaforaIcon from '../assets/img/ideaforaIcon.png';
 import binaryliteralIcon from '../assets/img/binaryliteralIcon.png';
 import quizzlestickIcon from '../assets/img/quizzlestickIcon.png';
-import weathervainIcon from '../assets/img/weathervainIcon.png';
 import elevenhourclockIcon from '../assets/img/elevenhourclockIcon.png';
 import passwordIcon from '../assets/img/passwordIcon.png';
 import botaIcon from '../assets/img/botaProject.png';
@@ -21,13 +20,6 @@ const projects = [
         text: "This is a culture blog that can be read in binary or english, meant to evoke the spirit of the 'zine and still pop on a phone screen.",
         image: binaryliteralIcon,
         link: "https://binaryliteral.herokuapp.com/",
-        button: "-->"
-    },
-    {
-        name: 'weathervain',
-        text: "A very gif-positive weather webpage. This site's pronouns are fabulous and I bet you wish you knew them.",
-        image: weathervainIcon,
-        link: "https://becketbowes.github.io/weathervain/",
         button: "-->"
     },
     {
